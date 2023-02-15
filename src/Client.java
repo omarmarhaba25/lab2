@@ -14,7 +14,7 @@ public class Client {
             BufferedReader bufferedReader = new BufferedReader( new InputStreamReader(
                     clientSocket.getInputStream() ) );
 
-            //send
+            //send the message
             String sendingSentence = "Hello from client";
             outToServer.writeBytes(sendingSentence + "\n");
 
